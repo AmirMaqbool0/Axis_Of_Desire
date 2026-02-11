@@ -1,0 +1,178 @@
+.slider-container{
+    width: 80%;
+    height: calc(100vh - 100px);
+    background: var(--lightwhite);
+    padding: 20px;
+    position: relative;
+    margin: 15px;
+    border: 1px solid var(--darkblue);
+    border-radius: 12px;
+}
+.slider-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider-header span{
+    font-size: 30px;
+    color: var(--darkblue);
+    font-weight: 600;
+}
+.slider-header button{
+   width: 120px;
+   height: 40px;
+   background: var(--darkblue);
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   color: var(--white);
+}
+
+/* Slide Card  */
+ .slide-card-container{
+    width: 100%;
+    height: 60px;
+    border-radius: 27px;
+    background: var(--white);
+    padding: 0px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    
+ }
+ .slide-card-container span{
+    font-size: 16px;
+    color: var(--darkblue);
+    font-weight: 500;
+ }
+ .slide-card-container img{
+    width: 150px;
+    height: 100%;
+    object-fit: fill;
+    overflow: hidden;
+ }
+
+/* // Add Slider  */
+  
+ .add-slider-container{
+    width: 80%;
+    height: calc(100vh - 100px);
+    background: var(--lightwhite);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 15px;
+    border: 1px solid var(--darkblue);
+    border-radius: 12px;
+ }
+
+ .add-slider-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .add-slider-heading span{
+    font-size: 30px;
+    color: var(--darkblue);
+    font-weight: 600;
+ }
+
+ .add-slider-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .add-slider-form input{
+   width: 50%;
+   height: 50px;
+   padding: 10px;
+   border-radius: 12px;
+   border: none;
+   outline: none;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+ }
+ .add-slider-form button{
+   width: 120px;
+   height: 40px;
+   background: var(--darkblue);
+   color: var(--white);
+   border-radius: 8px;
+   cursor: pointer;
+   border: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+
+ /* POP up  */
+ .slide-popup{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(34, 33, 33,0.5);
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+ }
+ .slide-popup-box{
+    width: 350px;
+    height: fit-content;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 60px 20px 60px 20px ;
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     position: relative;
+ }
+ .slide-popup-box input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+ }
+ .slide-popup-box button{
+   width: 100%;
+   height: 35px;
+   background: var(--darkblue);
+   border-radius: 8px;
+   border: none;
+   cursor: pointer;
+   color: var(--white);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+
+
+ .hide-popup{
+    display: none;
+ }
+ .cut-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+ }

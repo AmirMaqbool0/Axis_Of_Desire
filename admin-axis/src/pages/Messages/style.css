@@ -1,0 +1,136 @@
+.messages-container {
+    width: 80%;
+    height: calc(100vh - 100px);
+    background: var(--lightwhite);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    margin: 15px;
+    border: 1px solid var(--darkblue);
+    border-radius: 12px;
+}
+
+.messages-heading {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.messages-heading span {
+    font-size: 30px;
+    color: var(--darkblue);
+    font-weight: 600;
+}
+
+.messages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.messages-box {
+    width: 100%;
+    height: 50px;
+    background: var(--white);
+    border-radius: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.message-row{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.messages-box span {
+    font-size: 18px;
+    color: var(--darkblue);
+    font-weight: 500;
+}
+
+.message-popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background: rgba(42, 42, 42, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-popup-box {
+    width: 400px;
+    height: 400px;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.message-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-popup-box-heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-popup-box-heading span {
+    font-size: 25px;
+    color: var(--darkblue);
+    font-weight: 600;
+}
+
+.text-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.text-box span {
+    font-size: 18px;
+    color: var(--darkblue);
+    font-weight: 500;
+}
+
+.text-box p {
+    font-size: 12px;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+.popup-close-btn {
+    width: 40px;
+    height: 40px;
+    background: var(--gray);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.hide-popup {
+    display: none;
+}

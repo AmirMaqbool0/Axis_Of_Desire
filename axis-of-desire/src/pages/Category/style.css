@@ -1,0 +1,212 @@
+.category-container{
+    width: 100%;
+     min-height: 100vh;
+    background: var(--black);
+    position: relative;
+    padding: 40px;
+    position: relative;
+}
+.category-container::before{
+    content: '';
+    background: url(../../assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    opacity: 0.6;
+}
+.category-search{
+    width: 100%;
+    height: 60px;
+    border: 2px solid var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    isolation: isolate;
+    border-radius: 12px;
+    background: var(--darkblue);
+}
+.category-search input{
+    width: 95%;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+   color: var(--white);
+   padding: 10px;
+}
+.category-products{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 20px;
+    isolation: isolate;
+    margin-top: 30px;
+}
+.category-card{
+    width: 23%;
+}
+.category-botom-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+}
+.category-botom-btn span{
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 400;
+}
+.category-botom-btn button{
+    width: 230px;
+    height: 35px;
+    color: var(--black);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: var(--golden);
+    font-weight: 500;
+}
+
+/* Category Product Card */
+
+.related-product-card-container{
+    width: 100%;
+    height: 390px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    transition: all 0.5s;
+    border-radius: 12px;
+    
+}
+.related-product-card-logo{
+    width: 100%;
+    height: 50%;
+    border-radius: 12px 12px 0px 0px;
+    overflow: hidden;
+}
+.related-product-card-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.related-card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.related-card-text h1{
+  font-size: 25px;
+  color: var(--white);
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.related-card-text p{
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 400;
+    text-align: center;
+}
+.related-card-text span{
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 500;
+}
+.related-card-text button{
+    width: 100% ;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: var(--golden);
+    margin-top: 10px;
+    opacity: 0;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+.related-product-card-container:hover{
+     border: 1px solid var(--white);
+    transition: all 0.5s;
+    background: rgb(20,43,94,0.1);
+    backdrop-filter: blur(15px);
+}
+.related-product-card-container:hover > .related-card-text button {
+    opacity: 1 ;
+    transition: all 0.5s;
+}
+.related-product-card-container:hover > .favorite-btn {
+    opacity: 1 ;
+    transition: all 0.5s;
+}
+.favorite-btn{
+    width: 50px;
+    height: 50px;
+    background: var(--gray);
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s;
+}.loding-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:980px) {
+    .category-card{
+        width: 30%;
+    }
+}
+@media screen and (max-width:800px){
+    .category-container{
+        padding: 20px;
+    }
+    .category-card{
+        width: 40%;
+    }
+}
+@media screen and (max-width:680px){
+    .category-card{
+        width: 48%;
+    }
+}
+@media screen and (max-width:560px){
+    .category-card{
+        width: 100%;
+    }
+    .category-products{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.btn-link{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}

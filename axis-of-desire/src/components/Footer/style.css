@@ -1,0 +1,123 @@
+.footer-container{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding: 30px 30px 10px 30px;
+    margin: 0;
+    background: var(--blue);
+}
+
+
+.footer-content{
+    width: 100%;
+    display: flex;
+    gap: 120px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.footer-site-info{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   
+}
+.footer-site-info span{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--white);
+}
+.footer-site-info p{
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 300;
+}
+.footer-links{
+    display: flex;
+    gap: 130px;
+}
+.footer-link-box{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.footer-link-box span{
+    font-size: 16px;
+    color: var(--gray);
+    font-weight: 600;
+}
+.footer-link-box p{
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+   
+}
+.footer-newslater{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-bottom{
+    width: 100%;
+    padding: 10px 50px 0px 0px;
+    position: relative;
+}
+.footer-bottom::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--white);
+    left: 0;
+    top: 0;
+}
+.footer-bottom span{
+   font-size: 14px;
+   color: var(--white);
+   font-weight: 400;
+} 
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer-right p{
+  font-size: 12px;
+  color: var(--white);
+  font-weight: 300;
+  width: 350px;
+}
+
+@media screen and (max-width:680px) {
+    .footer-content{
+        gap: 80px;
+        padding: 0;
+    }
+    
+    
+    .footer-links{
+        display: flex;
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width:530px){
+    
+    .footer-site-info {
+       display: none;
+    }
+    
+    .footer-links{
+        display: flex;
+        gap: 40px;
+    }
+    .footer-content{
+        gap: 30px;
+        padding: 0;
+    }
+    .footer-bottom span{
+        font-size: 12px;
+        
+     }     
+}

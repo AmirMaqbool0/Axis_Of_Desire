@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+:root{
+  --white:white;
+  --black:black;
+  --golden:#F8C471;
+  --gray:#9F9F9F;
+  --darkblue:#0B1E48;
+  --blue:#081947;
+  --red:#DF1200;
+}
+.app{
+  overflow: hidden;
+}
+body{
+  background: var(--darkblue);
+}

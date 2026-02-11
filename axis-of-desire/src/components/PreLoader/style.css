@@ -1,0 +1,35 @@
+.preloader{
+    height: 100vh;
+    width: 100%;
+    background: var(--blue);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    overflow: hidden !important;
+}
+
+.texts-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    overflow: hidden;
+    font-weight: 800;
+    opacity: 0;
+    color: var(--white);
+}
+
+.texts-container span{
+    font-size:35px;
+}
+@media screen and (max-width:480px) {
+    .texts-container span{
+        font-size: 20px;
+    }   
+}

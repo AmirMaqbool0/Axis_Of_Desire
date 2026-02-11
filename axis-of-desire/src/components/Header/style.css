@@ -1,0 +1,160 @@
+/* General header styling */
+.header-container {
+    width: 100%;
+    height: 70px;
+    background: var(--blue);
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    justify-content: space-between;
+   
+}
+
+.header-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.header-logo span {
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-menu span {
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.menu-icon{
+    margin-top: 10px;
+   display: none;
+}
+
+.header-right img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+/* Submenu styling */
+.sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50px; 
+    left: 0;
+    background: var(--black);
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    z-index: 3;
+    width: 250px;
+}
+
+.sub-menu li {
+    color: var(--white);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sub-menu li:hover {
+    background-color: var(--gray);
+}
+.active{
+    position: relative;
+}
+.active::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--golden);
+    left: 0;
+    bottom: -2px;
+}
+@media screen and (max-width:800px) {
+    .header-container{
+        padding: 10px 20px;
+    }
+    .header-logo span{
+        font-size: 18px;
+    }
+    
+}
+@media screen and (max-width:680px){
+    .header-container{
+        position: relative;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .header-menu{
+        position: absolute;
+        top: 70px;
+        right: -300px;
+        width: 300px;
+        height: 100vh ;
+        background: var(--black) !important;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        transition: all 0.5s;
+    }
+    .header-menu span,.sidebar span{
+        font-size: 20px;
+        color: var(--white);
+    }
+    .sidebar{
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        width: 300px;
+        height: 100vh ;
+        background: var(--black) !important;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        padding-top: 70px;
+        transition: all 0.5s;
+    }
+}
+
+@media screen and (max-width:480px){
+    .header-logo span{
+        display: none;
+    }
+}

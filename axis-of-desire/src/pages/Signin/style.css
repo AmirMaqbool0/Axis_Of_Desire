@@ -1,0 +1,263 @@
+.signin-container{
+    width: 100%;
+    height: fit-content;
+    background: var(--lightpink);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.signin-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    padding: 50px;
+    background: var(--black);
+}
+.signin-content::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(../../assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+.signin-form-container{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+    width: 45%;
+  
+    
+}
+.signin-form{
+    width: 100%;
+    height: fit-content;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border: 2px solid var(--gray);
+    border-radius: 12px;
+    gap: 20px;
+    flex-direction: column;
+}
+.signin-form-heading span{
+    font-size: 23px;
+    color: var(--white);
+    font-weight: 600;
+}
+.signin-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+.signin-input-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.signin-input-box span{
+    font-size: 12px;
+     color: var(--white);
+     font-weight: 500;
+}
+.signin-input-box input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    background: var(--darkblue);
+    padding: 10px;
+    color: var(--white);
+    outline: none;
+}
+.signin-btn{
+    width: 100%;
+}
+.signin-btn button{
+    width: 100%;
+    height: 40px;
+    background: var(--golden);
+    border: none;
+    color: var(--black);border-radius: 6px;
+    cursor: pointer;
+}
+.signin-footer{
+    width: 100%;
+    position: relative;
+    margin-top: 25px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.signin-footer::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--golden);
+    left: 0;
+     top: 0;
+}
+.signin-footer-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signin-footer-text span{
+    font-size: 12px;
+    color: var(--golden);
+    font-weight: 500;
+    cursor: pointer;
+}
+.signin-text{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    isolation: isolate;
+    border: 2px solid var(--gray);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+}
+.signin-text span{
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 600;
+   margin: 0;
+   padding: 0;
+}
+.signin-text p{
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 300;
+    width: 250px;
+    text-align: center;
+}
+.signin-text button{
+    width: 120px;
+    height: 50px;
+    background: var(--golden);
+    color: var(--black);
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+
+.forget-password-popup{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.forget-password-box{
+    width: 400px;
+    height: 350px;
+    border: 2px solid var(--gray);
+    border-radius:8px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+    flex-direction: column;
+    position: relative ;
+}
+.forget-password-box  span{
+       color: var(--white);
+       font-weight: 600;
+       font-size: 25px;
+}
+.forget-password-input{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.forget-password-input span{
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 400;
+}
+.forget-password-input input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--gray);
+    outline: none;
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--darkblue);
+}
+.forget-password-box button{
+    width: 100%;
+    height: 50px;
+    background: var(--golden);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: var(--black);
+}
+.forget-close {
+    width: 25px;
+    height: 25px;
+    background: var(--gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.hide-popup{
+    display: none;
+}
+.error-message{
+    font-size: 13px; 
+    color: var(--red);
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:768px) {
+    .signin-form-container{
+        width: 80%;
+        
+    }
+    .signin-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .signin-text{
+        display: none;
+    }
+}
+@media screen and (max-width:550px){
+    .signin-content{
+        padding: 50px 20px 50px 20px;
+    }
+    .signin-form-container{
+        width: 100%;
+        
+    }
+}
