@@ -1,117 +1,41 @@
-# Axis_Of_Desire
-Axis of Desire — Full-Scale E-Commerce Platform
-4
+# Axis of Desire — E-Commerce Platform
 
-Axis of Desire is a complete e-commerce web application featuring multi-category products, user accounts, payments, and an administrative management system.
-The platform delivers a full online shopping experience from product discovery to order tracking.
+E-commerce platform with wishlist and product reviews, Stripe checkout, order history and admin product controls.
 
-This project demonstrates real-world full-stack application structure, user interaction flows, and admin-side system control.
+> **Client project.** Not publicly deployed.
 
-🚀 Platform Overview
+## Stack
 
-The system consists of:
+- **Frontend** — React, Redux Toolkit, TailwindCSS
+- **Backend** — Firebase / Firestore
+- **Payments** — Stripe
 
-Module	Description
-🛒 Customer Platform	Product browsing, shopping, and order management
-🧑‍💼 Admin Panel	Product, user, and order management
-💳 Payment System	Stripe integration for secure transactions
-🧠 Tech Stack
-💻 Frontend
+## Features
 
-JavaScript
+- Wishlist and product reviews
+- Secure Stripe checkout
+- Order history management
+- Admin product controls
 
-React.js
+## Architecture
 
-Tailwind CSS
+React client (Redux Toolkit) with Firebase Authentication and Firestore for product, review and order data. Stripe handles checkout.
 
-Redux Toolkit
+## My role
 
-🔐 Backend / Services
+Frontend and integration work: the storefront and admin interfaces, Firestore data modelling for products, reviews and orders, and the Stripe checkout integration.
 
-Firebase Authentication
+## Running locally
 
-Firebase Database
+```bash
+git clone https://github.com/AmirMaqbool0/Axis_Of_Desire.git
+cd Axis_Of_Desire
+npm install
+npm run dev
+```
 
-Stripe Payment Integration
+Requires Node.js 18+. Create a `.env` file in the project root with your own values for: `Firebase config keys, STRIPE_PUBLISHABLE_KEY`.
 
-✨ Key Features
-🛍 Customer Side
+---
 
-Multiple product categories
-
-Product detail pages
-
-Product reviews
-
-Wishlist functionality
-
-Add to cart
-
-Secure checkout with Stripe
-
-User authentication
-
-Order history tracking
-
-Fully responsive UI
-
-💬 User Account System
-
-Signup & login
-
-Persistent cart and wishlist
-
-Order tracking
-
-⚙️ Admin Dashboard
-
-Add / edit / delete products
-
-Manage categories
-
-View and manage user accounts
-
-Track and manage orders
-
-📁 Project Structure
-Repository	Purpose
-Main Storefront	Customer-facing e-commerce application
-Admin Panel	System management dashboard
-Payment Backend	Stripe transaction handling
-
-Production repositories remain private due to security and client considerations.
-This version highlights architecture and technical implementation for portfolio use.
-
-🧑‍💻 My Role
-
-Frontend & System Developer
-
-Designed and built complete UI
-
-Developed reusable React components
-
-Managed application state using Redux
-
-Implemented authentication and user flows
-
-Built cart, wishlist, and review systems
-
-Integrated Stripe payment processing
-
-Developed admin dashboard
-
-Ensured responsive and performance-optimized design
-
-🎯 Purpose of This Project
-
-This project showcases expertise in:
-
-Full e-commerce application development
-
-State management in complex apps
-
-Authentication and payment integration
-
-Admin management systems
-
-Scalable React application architecture
+Built by [Amir Maqbool](https://amirmaqbool.online) — Full Stack Developer (React · Next.js · Node.js · MongoDB), open to relocation to Germany.
